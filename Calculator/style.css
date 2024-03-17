@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    padding: 10px;
+    background: hsla(197, 14%, 57%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    position: relative;
+    height: 400px;
+    width: 350px;
+    margin-top: 150px;
+    background: hsla(213, 77%, 14%, 1);
+    background: linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(213, 77%, 14%, 1) 0%, hsla(202, 27%, 45%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#08203E", endColorstr="#557C93", GradientType=1 );
+    padding: 10px 20px 20px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    border-radius: 1rem;
+    background-color: C9EDDC;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.screen {
+    height: 90px;
+    width: 100%;
+    background-color: rgba(240, 255, 255, 0.912);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border: none;
+    border-radius: 1rem;
+    text-align: right;
+    padding: 8px;
+    color: rgb(58, 58, 58);
+}
+
+.numbers button {
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 15px;
+}
+
+.numbers button:hover {
+    transform: scale(1.05);
+} 
+
+.operator {
+    background-color: rgba(162, 212, 236, 0.934);
+}
+
+
